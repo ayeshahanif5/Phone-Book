@@ -198,19 +198,19 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="AspNetRole.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Phone.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUser.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Phone.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserClaim.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Phone.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserLogin.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Phone.tt</DependentUpon>
     </Compile>
     <Compile Include="Contact.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Phone.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AspNetUsersController.cs" />
@@ -273,7 +273,22 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Person.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Phone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Phone.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Phone.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Phone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -315,6 +330,16 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Phone.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Phone.edmx</DependentUpon>
+      <LastGenOutput>Phone.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Phone.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Phone.edmx</DependentUpon>
+      <LastGenOutput>Phone.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -342,6 +367,13 @@
     </EntityDeploy>
     <Content Include="Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Phone.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Phone.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Phone.edmx.diagram">
+      <DependentUpon>Phone.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
